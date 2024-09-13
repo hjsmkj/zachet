@@ -16,4 +16,4 @@ jobs:
           cmake -H. -B_build
           cmake --build _build
       - name: Run tests
-        run: ./_build/tests
+        run: ./_build/function_test

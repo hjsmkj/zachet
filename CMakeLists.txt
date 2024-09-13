@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(zachet)
 
 include_directories(zachet)
-add_submodule(third-party/googletest)
+add_subdirectory(third-party/googletest)
 
 add_executable(Zachet task.cpp function.cpp)
 add_executable(Tests function_test.cpp)

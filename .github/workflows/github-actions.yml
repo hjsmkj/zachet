@@ -1,0 +1,17 @@
+name: GitHub Actions
+on: [push]
+jobs:
+  Build-Project-Linux:
+    name: Build Project on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install CMake
+        run: sudo apt-get install -y cmake
+      - name: Configure and Build
+        run: |
+          cmake -H. -B_build
+          cmake --build _build
+      - name: Run tests
+        run: ./_build/tests

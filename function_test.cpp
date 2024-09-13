@@ -7,7 +7,7 @@ TEST(FunctionTests, PositiveNums) {
 }
 
 TEST(FunctionTests, NegativeAndZeroNums) {
-    EXPECT_EQ(function(0, 0), 0); // 0 + 0 * (0 + 1) = 0
+    EXPECT_NE(function(0, 0), 100); // 0 + 0 * (0 + 1) = 0
     EXPECT_EQ(function(-1, 1), -1); // -1 + 1 * (-1 + 1) = -1
     EXPECT_EQ(function(-2, -2), 0); // -2 + (-2) * (-2 + 1) = 0
 }

@@ -7,7 +7,7 @@ project(zachet_)
 
 
 add_executable(Zachet task.cpp function.cpp)
-add_executable(Tests function_test.cpp)
+add_executable(Tests function_test.cpp function.cpp)
 
 target_link_libraries(Tests gtest gtest_main)
 

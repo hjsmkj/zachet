@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(zachet_)
 
+
 add_executable(Zachet task.cpp function.cpp)
 add_executable(Tests function_test.cpp)
 
